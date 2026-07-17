@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family: "Times New Roman", serif;
+    background:#fff;
+}
+
+table{
+    width:1000px;
+    margin:20px auto;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th{
+    font-size:28px;
+    padding:15px;
+}
+
+td{
+    padding:10px;
+    font-size:18px;
+}
+
+.label{
+    width:170px;
+    font-size:22px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select{
+    width:280px;
+    height:35px;
+    font-size:16px;
+    padding-left:8px;
+}
+
+input[type=file]{
+    font-size:16px;
+}
+
+.submit{
+    width:90px;
+    height:35px;
+    font-size:18px;
+}
+</style>
+
+</head>
+<body>
+
+<table>
+
+<tr>
+<th colspan="6">Registration Form</th>
+</tr>
+
+<tr>
+<td class="label">Student Name</td>
+
+<td>
+<input type="text" placeholder="First Name">
+</td>
+
+<td>
+<input type="text" placeholder="Middle Name">
+</td>
+
+<td colspan="3">
+<input type="text" placeholder="Last Name">
+</td>
+</tr>
+
+<tr>
+<td class="label">Father's Name</td>
+
+<td>
+<input type="text" placeholder="Enter your father's Name">
+</td>
+
+<td class="label">Mother's Name</td>
+
+<td colspan="3">
+<input type="text" placeholder="Enter your Mother's Name">
+</td>
+</tr>
+
+<tr>
+<td class="label">Date of Birth</td>
+
+<td>
+<input type="date">
+</td>
+
+<td class="label">Gender</td>
+
+<td colspan="3">
+<label><input type="radio" name="gender"> Male</label>
+
+<label style="margin-left:20px;">
+<input type="radio" name="gender"> Female
+</label>
+</td>
+</tr>
+
+<tr>
+<td class="label">Category</td>
+
+<td>
+<label><input type="radio" name="cat"> Gen</label>
+
+<label style="margin-left:10px;">
+<input type="radio" name="cat"> OBC
+</label>
+
+<label style="margin-left:10px;">
+<input type="radio" name="cat"> SC/ST
+</label>
+</td>
+
+<td class="label">Handicapped</td>
+
+<td colspan="3">
+<label><input type="radio" name="hand"> Yes</label>
+
+<label style="margin-left:20px;">
+<input type="radio" name="hand"> No
+</label>
+</td>
+</tr>
+
+<tr>
+<td class="label">Ex-Serviceman</td>
+
+<td>
+<label><input type="radio" name="ex"> Yes</label>
+
+<label style="margin-left:20px;">
+<input type="radio" name="ex"> No
+</label>
+</td>
+
+<td class="label">EWS</td>
+
+<td colspan="3">
+<label><input type="radio" name="ews"> Yes</label>
+
+<label style="margin-left:20px;">
+<input type="radio" name="ews"> No
+</label>
+</td>
+</tr>
+
+<tr>
+<td class="label">Email ID</td>
+
+<td>
+<input type="email">
+</td>
+
+<td class="label">Mobile No.</td>
+
+<td colspan="3">
+<input type="tel">
+</td>
+</tr>
+
+<tr>
+<td class="label">State</td>
+
+<td>
+<select>
+<option>Select any One</option>
+<option>Andhra Pradesh</option>
+<option>Telangana</option>
+<option>Karnataka</option>
+<option>Tamil Nadu</option>
+</select>
+</td>
+
+<td class="label">City</td>
+
+<td colspan="3">
+<select>
+<option>Select any One</option>
+<option>Hyderabad</option>
+<option>Vijayawada</option>
+<option>Guntur</option>
+<option>Warangal</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="label">Upload Photo</td>
+
+<td>
+<input type="file">
+</td>
+
+<td class="label">Upload Signature</td>
+
+<td colspan="3">
+<input type="file">
+</td>
+</tr>
+
+<tr>
+<td colspan="6" align="center">
+<input class="submit" type="submit" value="Submit">
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
